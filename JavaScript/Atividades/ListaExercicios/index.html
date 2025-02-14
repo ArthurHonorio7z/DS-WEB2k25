@@ -6,18 +6,128 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Insira seu nome :</p>
+    <!--Questão 1-->
+    <h3>Insira seu nome :</h3>
     <input type="text" id="nome">
     <button onclick="nomeboas()">Enviar</button>
     <br>
     <p id="resNome"></p>
     <br>
-    <br>
-    <p>Insira um número para saber sua origem :</p>
+    <!--Questão 2-->
+    <h3>Insira um número para saber sua origem :</h3>
     <input type="number" id="numImp">
     <button onclick="numImpar()">Verificar</button>
     <br>
     <p id="resImp"></p>
-    <script src="script.js"></script>
+    <br>
+    <!--Questão 3-->
+    <h3>Insita uma string :</h3>
+    <input type="text" id="strBaixa">
+    <button onclick="caixaAlta()">Transformar</button>
+    <br>
+    <p id="strAlta"></p>
+    <br>
+    <!--Questão 4-->
+    <h3>Insira um valor :</h3>
+    <input type="number" id="numPorcentagem">
+    <br>
+    <h3>Insira a porcentagem :</h3>
+    <input type="number" id="porcentagem">
+    <button onclick="porcentagem()">Calcular</button>
+    <br>
+    <p id="resPorcentagem"></p>
+    <br>
+    <!--Questão 5-->
+    <style>
+        .corInicial {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+        }
+
+        .corNova {
+            background-color: ;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+        }
+    </style>
+    <div id="minhaDiv" class="corInicial">Clique no botão</div>
+    <button onclick="mudarCor()">Mudar Cor</button>
+    <br>
+    <!--Lista 2 Questão 1-->
+    <h3>Insira sua idade :</h3>
+    <input type="number" id="idade">
+    <button onclick="maiorIdade()">Verificar</button>
+    <br>
+    <p id="resIdade"></p>
+    <br>
+    <!--Questão 2-->
+    <h3>Insira um número positivo ou negativo :</h3>
+    <input type="number" id="numCondicao">
+    <button onclick="condicaoNum()">Verificar</button>
+    <br>
+    <p id="condicao"></p>
+    <br>
+    <!--Questão 3-->
+    <h3>Digite o usuário :</h3>
+    <input type="text" id="usuario">
+    <br>
+    <h3>Digite a senha :</h3>
+    <input type="password" id="senha">
+    <button onclick="login()">Entrar</button>
+    <br>
+    <p id="verLogin"></p>
+    <!--Questão 4-->
+    <h3>Calculadora :</h3>
+    <p>Numero 1 :</p>
+    <input type="number" id="num1Cal">
+    <br>
+    <p>Numero 2 :</p>
+    <input type="number" id="num2Cal">
+    <br>
+    <p>Operação (+ - / *) :</p>
+    <input type="text" id="operacao">
+    <button onclick="calculadora()">Calcular</button>
+    <p id="resCal"></p>
+    <!--Questão 5-->
+    <br>
+    <h3>Insira um número para saber sua origem :</h3>
+    <input type="number" id="numImp2">
+    <button onclick="numImpar2()">Verificar</button>
+    <br>
+    <p id="resImp2"></p>
+    <br>
+    <!--Questão 6-->
+    <h3>Descubra o maior número :</h3>
+    <p>Numero 1 :</p>
+    <input type="number" id="num1">
+    <p>Numero 2 :</p>
+    <input type="number" id="num2">
+    <p>Numero 3 :</p>
+    <input type="number" id="num3">
+    <br>
+    <p id="resMaior"></p>
+    <!--Questão 7-->
+    <h1>Descubra o tipo do triangulo :</h1>
+  <p>Lado 1:</p>
+  <input type="number" id="lado1"><br><br>
+
+  <p>lado 2:</p>
+  <input type="number" id="lado2"><br><br>
+
+  <p>lado 3:</p>
+  <input type="number" id="lado3"><br><br>
+
+  <button onclick="tipo()">Verificar</button>
+  <p id="triangulo"></p>
+
+   
 </body>
+    <script src="script.js"></script>
 </html>
