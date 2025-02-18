@@ -152,3 +152,29 @@ function maiorNumero(){
             document.getElementById("triangulo").innerHTML = "O triangulo é escaleno " ; 
           }
         }
+    //Lista 3 Questão 1
+    var a = window.document.getElementById('area')
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', sair)
+    function entrar(){
+    a.innerText = 'Entrou!'
+    a.style.background = 'red';
+    a.style.width ='400px';
+    a.style.height ='400px';
+    }
+    function sair()
+    {
+    a.innerText = 'Saiu!'
+    a.style.background = 'blue';
+    a.style.width ='300px';
+    a.style.height ='300px'
+    }
+    //Questão 2
+    function textoCopiador(){
+        const texto = document.getElementById("texto");
+        const textoCopia = document.getElementById("textoCopia");
+
+        
+        texto.addEventListener("keypress", function() {
+         textoCopia.textContent = texto.value;
+    }
