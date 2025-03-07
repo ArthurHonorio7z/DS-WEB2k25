@@ -1,0 +1,43 @@
+.tudo {
+    text-align: center;
+}
+
+.container {
+    height: 230px;
+    width: 200px;
+    background-color: lavender;
+    border: 3px solid navy;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.botao {
+    width: 175px;
+    height: 35px;
+    background-color: royalblue;
+    border: 2px solid black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: royalblue
+}
+
+input {
+    width: 170px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.cartoes {
+    height: 230px;
+    width: 200px;
+    background-color: lightgray;
+    border: 3px solid black;
+    margin: 50px auto;
+    border-radius: 10px;
+}

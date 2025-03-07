@@ -1,3 +1,5 @@
+
+
 //Atividade 1
 
 //Questão 1
@@ -37,11 +39,16 @@ function porcentagem(){
 
 }
 //Quetsão 5
+
 function mudarCor() {
     var div = document.getElementById("minhaDiv");
-    var cores = ["vermelho", "azul", "verde", "amarelo", "roxo", "laraja", "rosa"]; 
-    var corAleatoria = cores[Math.floor(Math.random() * cores.length)];
-    div.style.backgroundColor = corAleatoria;
+    var corAtual = div.style.backgroundColor;
+
+    if (corAtual === 'gray') { 
+        div.style.backgroundColor = 'red';
+    } else {
+        div.style.backgroundColor = 'gray';
+    }
 }
 //LISTA 2
 
@@ -114,21 +121,21 @@ function numImpar2(){
     }
 }
 //Questão 6
-function maiorNumero(){
-    var num1 = parseFloat(document.getElementById("num1"));
-    var num2 = parseFloat(document.getElementById("num2"));
-    var num3 = parseFloat(document.getElementById("num3"));
+    function maiorNumero() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var num3 = parseFloat(document.getElementById("num3").value);
 
-    if(num1>num2 && num3){
-        document.getElementById("resMaior").innerHTML = "O número " + num1 + " é o maior número";   
-    }
-    if(num2>num1 && num3){
-        document.getElementById("resMaior").innerHTML = "O número " + num2 + " é o maior número"; 
-    }
-    if(num3>num2 && num1){
+    if (num1 > num2 && num1 > num3) {
+        document.getElementById("resMaior").innerHTML = "O número " + num1 + " é o maior número";
+    } else if (num2 > num1 && num2 > num3) {
+        document.getElementById("resMaior").innerHTML = "O número " + num2 + " é o maior número";
+    } else if (num3 > num1 && num3 > num2) {
         document.getElementById("resMaior").innerHTML = "O número " + num3 + " é o maior número";
+    } else {
+        document.getElementById("resMaior").innerHTML = "Os números são iguais ou inválidos";
     }
-    }
+}
     //Questão 7
     function tipo(){   
         const lado1 = parseFloat(document.getElementById("lado1").value);
@@ -157,24 +164,29 @@ function maiorNumero(){
     a.addEventListener('mouseenter', entrar)
     a.addEventListener('mouseout', sair)
     function entrar(){
-    a.innerText = 'Entrou!'
+    a.innerText = 'Entrou';
     a.style.background = 'red';
-    a.style.width ='400px';
-    a.style.height ='400px';
+    a.style.width ='350px';
+    a.style.height ='350px';
     }
     function sair()
     {
-    a.innerText = 'Saiu!'
+    a.innerText = 'Saiu';
     a.style.background = 'blue';
     a.style.width ='300px';
-    a.style.height ='300px'
+    a.style.height ='300px';
     }
     //Questão 2
+    document.getElementById("entrada").addEventListener("keypress", textoCopiador)
     function textoCopiador(){
-        const texto = document.getElementById("texto");
-        const textoCopia = document.getElementById("textoCopia");
-
-        
-        texto.addEventListener("keypress", function() {
-         textoCopia.textContent = texto.value;
+        var textoCopiado = document.getElementById("entrada").value;
+        var saida = document.getElementById("saida").innerHTML = textoCopiado;
     }
+    //Questão 3
+    document.getElementById("contador").addEventListener("click", contagem);
+    contagem = 0;
+    function contadorClique{
+        contagem++
+       document.getElementById("contagemSaida").innerHTML = "O botão foi clicado "+contagem+" vezes";
+    }
+   

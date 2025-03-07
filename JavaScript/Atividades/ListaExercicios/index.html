@@ -53,24 +53,14 @@
         .corInicial {
             width: 200px;
             height: 200px;
-            background-color: lightgray;
+            background-color: gray;
             text-align: center;
             line-height: 200px;
-            font-weight: bold;
-        }
-
-        .corNova {
-            background-color: ;
-            width: 200px;
-            height: 200px;
-            text-align: center;
-            line-height: 200px;
-            font-weight: bold;
+           
         }
     </style>
-    <div id="minhaDiv" class="corInicial">Clique no botão</div>
+    <div id="minhaDiv" class="corInicial">Clique em mim!</div>
     <button onclick="mudarCor()">Mudar Cor</button>
-    <br>
     <!--Lista 2 Questão 1-->
     <h3>Insira sua idade :</h3>
     <input type="number" id="idade">
@@ -115,15 +105,17 @@
     <p id="resImp2"></p>
     <br>
     <!--Questão 6-->
-    <h3>Descubra o maior número :</h3>
-    <p>Numero 1 :</p>
+    <h3>Descubra o maior número:</h3>
+    <p>Numero 1:</p>
     <input type="number" id="num1">
-    <p>Numero 2 :</p>
+    <p>Numero 2:</p>
     <input type="number" id="num2">
-    <p>Numero 3 :</p>
+    <p>Numero 3:</p>
     <input type="number" id="num3">
     <br>
+    <button onclick="maiorNumero()">Descubra o maior numero</button>
     <p id="resMaior"></p>
+
     <!--Questão 7-->
     <h1>Descubra o tipo do triangulo :</h1>
   <p>Lado 1:</p>
@@ -140,15 +132,22 @@
 
    <!-- Lista 3 Questão 1-->
     <div id="area">
-
     </div>
+    
     <!--Questão 2-->
     <h3>Digite um texto :</h3>
-    <input type="text" id="texto" onkeypress="textoCopiador()">
-    <p>Texto digitado</p>
+    <div class="box"></div>
+    <p>Texto copiado</p>
+    <input type="text" id="entrada" >
+    <p id="saida"></p>
     
+    <!--Questão 3-->
+    <h3>Contador com botão :</h3>
+    <button id="contador">Clique aqui</button>
+    <p id="contagem"></p>
 
+    
    
 </body>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </html>
